@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.container {
+    width:100%;
+    max-width:640px;
+}
+
+.header {
+    font-size: 1.5em;
+}
+
+.movecell-container{
+    text-align: center;
+}
+
+.inputArea {
+    background-color:khaki;
+    display:inline-flex;
+    align-items: baseline;
+    margin: 20px;
+}
+
+.inputArea label {
+    display:inline-block;
+    font-size: 1.2em;
+    padding-inline: 20px;
+    border-inline-end:3px solid #caba2d;
+
+}
+.inputArea #numberInput {
+    padding: 10px;
+    height: 45px;
+    font-size: 1.2em;
+    position:static;
+    border:none;
+    background-color: transparent;
+}
+
+.inputArea #numberInput:focus {
+    outline: none;
+}
+
+.inputArea #startBtn {
+    height:45px;
+    width: 60px;
+    font-size: 1.2em;
+    background-color:#caba2d;
+    color:white;
+    border:none;
+    cursor: pointer;
+}
+
+.tableArea {
+    display: inline-block;
+    margin: 10px;
+}
+
+.tableArea table {
+    border-collapse: collapse;
+}
+
+.tableArea table td {
+    width: 60px;
+    height: 60px;
+    border : 2px solid #b3b729;
+    text-align: center;
+    font-weight: bold;
+    color : red;
+}

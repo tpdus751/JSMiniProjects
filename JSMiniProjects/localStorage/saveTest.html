@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <div class="main">
+            <input id="id" type="text" />
+            <input id="pwd" type="password" />
+            <button id="loginBtn">로그인</button><br>
+            <button id="displayBtn">사용자 정보 출력</button>
+            <div id="userId"></div>
+            <div id="userPwd"></div>
+        </div>
+    </body>
+
+    <script>
+        const idElement = document.getElementById("id");
+        const pwdElement = document.getElementById("pwd");
+        const loginButton = document.getElementById("loginBtn");
+
+        const displayBtn = document.querySelector("#displayBtn");
+        const userIdElement = document.getElementById("userId");
+        const userPwdElement = document.getElementById("userPwd");
+
+
+        displayBtn.addEventListener("click", function () {
+            const loadInfo = localStorage.getItem("userInfo");
+            console.log(loadInfo);
+            const userLoginInfo = JSON.parse(loadInfo);
+            console.log(userLoginInfo);
+            userIdElement.innerText = userLoginInfo.id;
+            userPwdElement.innerText = userLoginInfo.pwd;          
+
+        });
+        // key-value 쌍으로 저장
+        loginButton.addEventListener("click", () => {
+            const userInfo = { 
+                id : idElement.value,
+                pwd : pwdElement.value
+            }
+            const JSONstr = JSON.stringify(userInfo);
+            console.log(JSONstr);
+            localStorage.setItem("userInfo", JSONstr);
+        });
+    </script>
+</body>
+
+</html>

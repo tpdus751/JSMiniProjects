@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    min-width: 320px;
+    max-width: 640px;
+    width: 100%;
+}
+
+.header {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.todolist-container {
+    background-color:plum;
+    text-align: center;
+    padding : 20px;
+}
+
+.inputArea {
+    margin: 10px;
+}
+.inputArea #todoInput {
+    width: 80%;
+    border: 1px solid #eee;
+    font-size: 1.3em;
+    height: 45px;
+    padding: 10px;
+}
+
+.inputArea #todoInput:focus {
+    outline: none;
+}
+
+.inputArea #addBtn {
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    background-color: #000;
+    color:white;
+    border:none;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.listArea {
+    list-style: none;
+    text-align:left;
+    font-size: 1.3em;
+}
+
+.listArea li {
+    padding: 10px;
+    display: flex;
+}
+
+.listArea .checkBtn {
+    border:none;
+    width:20px;
+    height:20px;
+    margin-top: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.listArea .check {
+    text-decoration: line-through;
+}
+
+.listArea .delBtn {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+

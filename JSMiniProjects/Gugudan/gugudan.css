@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    min-width: 240px;
+    max-width: 400px;
+    width:100%;
+}
+.header {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.gugudan-container {
+    text-align: center;
+}
+
+.inputArea {
+    padding-bottom: 10px;
+    background-color: bisque;
+    padding: 20px;
+}
+
+h1 {
+    padding-bottom: 20px;
+}
+
+.inputArea #danInput {
+    height: 45px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.inputArea #displayBtn {
+    height: 45px;
+    width: 60px;
+    font-size: 1.2em;
+    vertical-align: bottom;
+    
+}
+
+.displayArea {
+    display: none;
+    background-color:lemonchiffon;
+}
+
+.displayArea #danNumber {
+    font-size: 1.5em;
+    padding: 10px;
+}
+
+.displayArea #result {
+    font-size: 1.5em;
+    padding: 10px;
+    line-height: 1.5;
+    white-space:break-spaces;
+}
